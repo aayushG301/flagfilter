@@ -15,11 +15,21 @@ one as a tag, and do not propose removing one from `aliases`. See #184 and #203.
 
 ## Rules
 
-**`vertical` and `horizontal` describe the design, not any band in it.** The flag
-needs at least two parallel bands in that orientation to earn the tag. A single band
-at the hoist crossing horizontal stripes does not make the flag vertical: Benin,
-the Central African Republic and Guinea-Bissau are `horizontal` and nothing else.
-The United Arab Emirates and Madagascar are the same case.
+**`vertical` and `horizontal` describe how the field is cut.** Count the parts the
+field is divided into, not the coloured bands. Turkmenistan is green, red and green
+from the hoist: three side-by-side parts, so it is `vertical`, even though only one
+part is red. What does not count is a band that stripes of the other orientation run
+into, wherever it sits: Benin, the Central African Republic and Guinea-Bissau are
+`horizontal` and nothing else, and so are the United Arab Emirates and Madagascar.
+
+When a coat of arms is the flag, its partitions count as the flag's if they are
+prominent. Saint Barthélemy's shield is cut into three horizontal parts, and that is
+most of what you see, so the flag is `horizontal`.
+
+**A figure people read as a star keeps `star`.** Saint Barthélemy's white figure is
+heraldically a Maltese cross, but it looks enough like a star that people searching for
+one expect to find the flag. An alias cannot do this job: the search reads "star" as
+the star filter, so only the tag makes the flag turn up.
 
 **A ring of text is not a `circle`.** Nicaragua's emblem sits inside a lettered ring;
 that is lettering arranged in a curve, not a circle in the flag's design.
@@ -103,6 +113,28 @@ and Guadeloupe's sun is a large round body with the rays worked into its edge.
 Ecuador is the one real question and is in `needs-a-human.tsv`: its sun is a small
 faced disc high on an oval shield, round but barely a design element in its own right.
 
+## Colours: what someone would describe, not every tincture
+
+A colour counts when it is how someone would describe what they saw. That covers
+three things:
+
+- **The flag's own fields and bands, and any plain emblem on them.** Barbados's trident
+  is black, Venezuela's stars are white, Malaysia's crescent is yellow. Someone
+  searching for "black trident" is describing the flag, so `black` belongs on it.
+- **A coat of arms that is the flag.** Saint Barthélemy is a white field with its arms
+  on it, and the arms are what anyone sees. Their blue, red and yellow are the flag's
+  colours.
+- **A colour that stands out, even inside a coat of arms.** The shield on Turks and
+  Caicos is solid yellow and large enough to be the first thing you notice, so
+  `yellow` belongs on the flag.
+
+What does not count is detail. Nobody describes Ecuador by the green of the grass in
+its arms. Tagging every tincture in every coat of arms would put arms-bearing flags in
+nearly every colour filter, and a filter that returns everything helps nobody.
+
+When unsure, ask whether the colour would appear in a one-line description of the
+flag. "Blue, white and red stripes with a coat of arms" does not name the grass.
+
 ## Motifs the vocabulary does not cover
 
 `tags` holds filter terms only, so an audit that sees a recurring motif with no term
@@ -127,7 +159,5 @@ review:
 The same as above, the other way round. Propose these in a batch rather than editing
 by hand:
 
-- `gp` depicts sugar cane — its `symbolism` says so — and carries no `vegetation`.
-- `ar` and `uy` carry `sun` without `circle`, and the Sun of May's face sits on a
-  closed round disc.
-- `gp` carries `sun` without `circle`; the sun's body is a large round disc.
+- `bb` gains `tool`. A trident is a fishing spear as well as a weapon, and the owner
+  judged that the axe rule covers it.
