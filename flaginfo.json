@@ -315,6 +315,9 @@
       "vertical",
       "black"
     ],
+    "aliases": [
+      "trident"
+    ],
     "shortname": "bb",
     "continent": "northAmerica",
     "name": "Barbados",
