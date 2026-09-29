@@ -73,8 +73,7 @@ changes the counts. Before a batch, check that each rule still holds across
 **These do not imply anything, and the broader tag is a separate finding.**
 
 - `crown` is not a `hat`. A crown is regalia, not headwear, and no crown flag
-  carries `hat`. Whether a bishop's mitre is a `hat` is still open, in
-  `needs-a-human.tsv`.
+  carries `hat`. A bishop's mitre is headwear, so Andorra's counts as a `hat`.
 - `hand` is not `human`, and neither is `face` or `hat`. A body part or a garment
   standing alone is not a person: Brunei's hands, the Red Hand of Ulster, the Sun of
   May's face on Argentina and Uruguay, the hats on Haiti, Lesotho, Nicaragua and El
@@ -119,8 +118,8 @@ twelve-pointed sun.
 **Decided in review.** Guadeloupe's sun is a large round body with the rays worked into
 its edge. It was proposed for `circle` and declined, so it stays without one.
 
-Ecuador is the one open question and is in `needs-a-human.tsv`. Its sun is a small
-faced disc high on an oval shield, round but barely a design element in its own right.
+Ecuador's sun was declined as well. It is a small faced disc high on an oval shield,
+round but barely a design element in its own right.
 
 ## Colours: what someone would describe, not every tincture
 
@@ -182,10 +181,10 @@ with the flags it was seen on. Enough entries pointing the same way is the argum
 for a new filter button, which is its own issue and its own PR — see #184. Do not
 add the term to `js/filter-config.js` as part of an audit batch.
 
-- **eagle**: American Samoa (alias proposed in tranche 3), Serbia (tranche 2, no
-  alias). Mexico, Egypt, Albania and others are still to come.
-- **lion**: Jersey, Bermuda, and Sri Lanka still to come. So far always inside a
-  shield, so not proposed as an alias.
+- **eagle**: American Samoa and the US Virgin Islands (aliases), Serbia (tranche 2,
+  no alias). Mexico, Egypt, Albania and others are still to come.
+- **lion**: Jersey, Bermuda, Spain, and Sri Lanka still to come. So far always inside
+  a shield, so not proposed as an alias.
 - **flower**: Hong Kong (alias proposed). Macau's lotus is still to come.
 
 ## Candidates for the removal pass
@@ -201,6 +200,16 @@ review:
   Saint Barthélemy's `star` does not obviously cover them.
 - `sh` carries `brown`, and the only brown is the cliffs inside the shield. By the
   colour rule that is detail.
+- `im` carries `star`, and there is no star on the flag. The emblem is a triskelion.
+- `dm` carries `horizontal` and `vertical` for its cross. No other cross flag carries
+  them, and by the rule the field is cut by a cross, not into bands.
+- `es` carries `vertical`, but the flag is three horizontal bands. The only upright
+  shapes are the pillars in the arms.
+- `gq` carries `ribbon` for the scroll with its motto, *Unidad, Paz, Justicia*. By the
+  ribbon rule a motto scroll is not a ribbon; Andorra and Egypt were declined for the
+  same reason.
+- `tf` carries `vertical`, and the only vertical stripes are those of the French flag
+  in the canton. By the canton rule that flag is not part of the design.
 
 ## Additions found while settling the rules
 
