@@ -22,6 +22,11 @@ export const SUPPORTED_LANGUAGES = ['en', 'es'];
 // and a language is not, so these are choices rather than facts: English is shown
 // as the Union Jack, Spanish as Spain.
 export const LANGUAGE_FLAGS = { en: 'gb', es: 'es' };
+
+export const LANGUAGE_FLAG_DIMENSIONS = {
+    en: { width: 40, height: 20 },
+    es: { width: 30, height: 20 }
+};
 // Each language named in itself, which is what a reader looking for their own
 // language recognises. These are not translated.
 export const LANGUAGE_NAMES = { en: 'English', es: 'Español' };
